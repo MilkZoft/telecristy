@@ -1,16 +1,20 @@
 (function() {
     'use strict';
 
-    var telecristyApp = angular.module('telecristyApp', []);
+    define(function(require) {
+        var angular = require('angular');
 
-    telecristyApp
-        .controller('homeController', HomeController);
+        var telecristyApp = angular.module('telecristyApp', []);
 
-    HomeController.$inject = ['$scope'];
+        telecristyApp
+            .controller('homeController', HomeController);
 
-    function HomeController($scope) {
-        var vm = this;
+        HomeController.$inject = ['$scope'];
 
-        vm.name = 'Carlos';
-    }
+        function HomeController($scope) {
+            var vm = this;
+
+            vm.name = 'Carlos';
+        }
+    });
 })();

@@ -9,12 +9,13 @@
         <link href="public/css/style.css" rel="stylesheet" />
     </head>
 
-    <body ng-app="telecristyApp">
+    <body>
         <div ng-controller="homeController as vm">
             <p>Hola {{ vm.name }}</p>
         </div>
 
-        <script src="public/bower_components/angular/angular.min.js" /></script>
-        <script src="public/js/telecristy/telecristy.module.js" /></script>
+        <script
+            data-main="public/js/main"
+            src="public/bower_components/requirejs/require.js"></script>
     </body>
 </html>
